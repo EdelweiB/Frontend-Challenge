@@ -137,6 +137,8 @@ h2 {
 }
 
 nav {
+  display: inline;
+  float: left;
   padding: 10px 0;
   width: 100%;
   background-color: #f8f8f8;
@@ -147,7 +149,6 @@ nav {
 }
 
 .nav {
-  display: inline;
   float: left;
   box-sizing: border-box;
   padding-left: 5%;
