@@ -1,3 +1,7 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #ffffff;
   font-family: SF Pro Text;
@@ -14,9 +18,8 @@ header {
   background-color: #f8f8f8;
   margin: 0 auto;
   width: 100%;
-  box-sizing: border-box;
-  padding-bottom: 8px;
-  border-bottom: : 1px solid #bcbbc1;
+  padding-bottom: 16px;
+  position: sticky;
 }
 
 .header ul {
@@ -54,8 +57,9 @@ h2 {
 }
 
 .bus-list {
-  display: flex;
-  flex-direction: column;
+  height: 530px;
+  overflow: scroll;
+  clear: both;
 }
 
 .search {
@@ -64,26 +68,32 @@ h2 {
   padding: .8em;
   border-radius: 1em;
   margin: auto;
-  background-color: rgba(142, 142, 147, 0.12)
-}
-
-.search ul {
-  display: inline-flex;
+  background-color: rgba(142, 142, 147, 0.12);
+  height: 36px;
 }
 
 .searchText {
   font-size: 1.7em;
   text-align: left;
-  letter-spacing: -2.41%
+  letter-spacing: -2.41%;
+  width: 80%;
+  padding-left: 8px;
+  float: left;
+}
+
+.left {
+  float: left;
 }
 
 .fa-microphone {
-  padding-left: 9em;
+  float: right;
 }
 
 .row {
   border-top: 1px solid #bcbbc1;
   margin: 0 0 0 7.5%;
+  height: 92px;
+  padding: 8px;
 }
 
 .busInfo {
@@ -98,10 +108,22 @@ h2 {
 
 .busNumber {
   font-size: 1.13em;
-  font-weight: 500;
+  font-weight: 400;
 }
 
-.time {
+.busRerouted {
+  font-size: 1.13em;
+  font-weight: 400;
+  color: #8F7200;
+}
+
+.busOutOfService {
+  font-size: 1.13em;
+  font-weight: 400;
+  color: #eb0c00;
+}
+
+.frequency {
   color: #8c8c8c;
 }
 
@@ -120,37 +142,36 @@ h2 {
   color: #8F7200;
 }
 
+.statusNA {
+  color: #8C8C8C;
+}
 .departing {
   font-size: 1.5em;
   color: #8C8C8C;
   float: left;
-  width: 22.5%;
-  padding-top: 7.5%;
+  width: 22%;
+  padding-top: 7%;
   text-align: justify;
 }
 
 .fa-chevron-right {
   float: right;
-  width: 7.5%;
+  width: 4%;
   padding-top: 10%;
   color: #8c8c8c;
 }
 
 nav {
-  display: inline;
-  float: left;
-  padding: 10px 0;
   width: 100%;
   background-color: #f8f8f8;
   color: #8C8C8C;
   text-align: center;
   line-height: 1.2em;
-  border-top: 1px solid #bcbbc1;
+  height: 46px;
 }
 
 .nav {
   float: left;
-  box-sizing: border-box;
   padding-left: 5%;
 }
 
