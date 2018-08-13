@@ -8,6 +8,10 @@ body {
   font-size: 10px;
 }
 
+@-ms-viewport{
+  width: device-width;
+}
+
 .container {
   margin: 0 auto;
   width: 375px;
